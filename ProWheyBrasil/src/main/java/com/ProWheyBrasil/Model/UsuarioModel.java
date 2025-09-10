@@ -21,4 +21,10 @@ public class UsuarioModel {
     @Email private String emailUsuario;
     @Column(name = "SENHAUSUARIO")
     private String senhaUsuario;
+    @Column(name = "ENDERECOUSUARIO")
+    private String enderecoUsuario;
+    @Column(name = "CPFUSUARIO")
+    private String cpfUsuario;
+    @Column(name = "TELEFONEUSUARIO")
+    private String telefoneUsuario;
 }
