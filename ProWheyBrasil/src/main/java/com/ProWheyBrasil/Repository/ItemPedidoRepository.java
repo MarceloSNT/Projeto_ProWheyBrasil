@@ -11,6 +11,6 @@ import java.util.Optional;
 public interface ItemPedidoRepository extends JpaRepository<ItemPedidoModel,Integer> {
 
     @Query(value = "select * from TBITEMPEDIDOS WHERE idProduto =?1 AND idPedido= ?2")
-    Optional<ItemPedidoModel> findByIdProdutoAndIdPedido(Integer idProduto, Integer idPedido);
+    Optional<ItemPedidoModel> findAllByIdProdutoAndIdPedido(Integer idProduto, Integer idPedido);
 
 }

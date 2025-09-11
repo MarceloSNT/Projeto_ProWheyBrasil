@@ -26,8 +26,8 @@ public class ItemPedidoController {
     public ResponseEntity<ItemPedidoModel> save(@RequestBody @Valid ItemPedidoDto itemPedidoDto) {
         var itemPedido = new ItemPedidoModel();
         BeanUtils.copyProperties(itemPedidoDto, itemPedido);
-        return ResponseEntity.status(HttpStatus.CREATED).body(
-                itemPedidoRepository.save(itemPedido));
+        return ResponseEntity.status(HttpStatus.CREATED)
+                .body(itemPedidoRepository.save(itemPedido));
     }
 
     @GetMapping
@@ -36,11 +36,11 @@ public class ItemPedidoController {
     }
 
     @GetMapping("/idPedido/idProduto")
-    public ResponseEntity<Optional<ItemPedidoModel>> getByIdPedidoAndIdProduto
+    public ResponseEntity<Optional<ItemPedidoModel>> getAllByIdPedidoAndIdProduto
             (@PathVariable("idPedido")Integer idPedido,
              @PathVariable("idProduto") Integer idProduto){
         return ResponseEntity.status(HttpStatus.OK).body(itemPedidoRepository
-                .findByIdProdutoAndIdPedido(idProduto,idPedido));
+                .findAllByIdProdutoAndIdPedido(idProduto,idPedido));
 
     }
 }
