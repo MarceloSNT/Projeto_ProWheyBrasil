@@ -13,8 +13,8 @@ import lombok.NoArgsConstructor;
 public class ItemPedidoModel {
     @Column(name = "IDPEDIDO")
     private Integer idPedido;
-    @Column(name = "IDUSUARIO")
-    private Integer idUsuario;
+    @Column(name = "IDPRODUTO")
+    private Integer idProduto;
     @Column(name = "QUANTIDADE")
     private Double quantidade;
     @Column(name = "VALORPEDIDO")
