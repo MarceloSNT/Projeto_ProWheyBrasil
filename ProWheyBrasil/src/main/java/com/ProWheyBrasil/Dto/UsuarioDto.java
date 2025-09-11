@@ -6,7 +6,7 @@ public record UsuarioDto(
 
         @NotNull(message = "O nome do ususario não pode estar vazio")
         @NotBlank(message = "O nome do usuario não pode estar em branco")
-        @Size(min = 3, max = 100, message = "O usuario está forma de formataçã")
+        @Size(min = 3, max = 100, message = "O usuario está forma de formatação")
         String nomeUsuario,
 
         @NotNull(message = "O email do ususario não pode estar vazio")
@@ -25,7 +25,7 @@ public record UsuarioDto(
 
         @NotNull(message = "O cpf do ususario não pode estar vazio")
         @NotBlank(message = "O cpf não pode ser nullo")
-        @Pattern(regexp = "\\d{14}")
+        @Pattern(regexp="\\d{3}\\.?\\d{3}\\.?\\d{3}\\-?\\d{2}")
         String cpfUsuario,
 
         @NotNull(message = "O telefone do ususario não pode estar vazio")

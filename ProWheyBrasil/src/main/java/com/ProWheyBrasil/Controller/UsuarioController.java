@@ -34,7 +34,7 @@ public class UsuarioController {
     }
 
     @GetMapping("/idUsuario")
-    public ResponseEntity<Object> getUsuarioById(@PathVariable("idUsuario") Integer idUsuario){
+    public ResponseEntity<Object> getUsuarioById(@PathVariable(value = "idUsuario") Integer idUsuario){
         Optional<UsuarioModel> usuario0 = usuarioRepository.findById(idUsuario);
         if (usuario0.isPresent()){
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Usuário não cadastrado");
