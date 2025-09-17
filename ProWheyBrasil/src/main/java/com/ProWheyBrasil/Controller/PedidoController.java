@@ -17,7 +17,6 @@ import java.util.List;
 @CrossOrigin(origins = "*")
 @RequestMapping("api/v1/pedido")
 public class PedidoController {
-
     @Autowired
     private PedidoRepository pedidoRepository;
 

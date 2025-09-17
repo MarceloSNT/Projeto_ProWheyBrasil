@@ -13,18 +13,9 @@ import lombok.NoArgsConstructor;
 @Table(name = "TBUSUARIOS")
 public class UsuarioModel {
     @Id@GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "IDUSUARIO")
     private Integer idUsuario;
-    @Column(name = "NOMEUSUARIO")
-    private String nomeUsuario;
-    @Column(name = "EMAILUSUARIO")
+    @Column(unique = true)
     @Email private String emailUsuario;
     @Column(name = "SENHAUSUARIO")
     private String senhaUsuario;
-    @Column(name = "ENDERECOUSUARIO")
-    private String enderecoUsuario;
-    @Column(name = "CPFUSUARIO")
-    private String cpfUsuario;
-    @Column(name = "TELEFONEUSUARIO")
-    private String telefoneUsuario;
 }
