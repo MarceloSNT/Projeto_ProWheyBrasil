@@ -1,4 +1,4 @@
-package com.ProWheyBrasil.Dto;
+package com.ProWheyBrasil.dto;
 
 import jakarta.validation.constraints.Future;
 import jakarta.validation.constraints.Min;
@@ -23,8 +23,6 @@ public record ProdutoDto(
 
         @NotNull(message = "o id do usuario não pode ser em nulo") @Min(value = 0) Double valorProd,
 
-        @NotNull(message = "não é possivel selecionar um data já passada ") @Future Date dataValidade) {
-
-
-}
+        @NotNull(message = "não é possivel selecionar um data já passada ") @Future Date dataValidade)
+{}
 

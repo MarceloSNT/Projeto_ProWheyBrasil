@@ -1,8 +1,8 @@
-package com.ProWheyBrasil.Controller;
+package com.ProWheyBrasil.controller;
 
-import com.ProWheyBrasil.Dto.UsuarioDto;
-import com.ProWheyBrasil.Model.UsuarioModel;
-import com.ProWheyBrasil.Repository.UsuarioRepository;
+import com.ProWheyBrasil.dto.UsuarioDto;
+import com.ProWheyBrasil.model.UsuarioModel;
+import com.ProWheyBrasil.repository.UsuarioRepository;
 import jakarta.validation.Valid;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
