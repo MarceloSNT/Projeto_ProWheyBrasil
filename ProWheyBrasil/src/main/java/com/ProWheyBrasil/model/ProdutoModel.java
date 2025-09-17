@@ -1,4 +1,4 @@
-package com.ProWheyBrasil.Model;
+package com.ProWheyBrasil.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

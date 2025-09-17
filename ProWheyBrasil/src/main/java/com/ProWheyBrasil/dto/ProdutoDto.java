@@ -1,4 +1,4 @@
-package com.ProWheyBrasil.Dto;
+package com.ProWheyBrasil.dto;
 
 import jakarta.validation.constraints.Future;
 import jakarta.validation.constraints.Min;

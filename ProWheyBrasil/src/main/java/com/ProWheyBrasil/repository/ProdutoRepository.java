@@ -1,5 +1,5 @@
-package com.ProWheyBrasil.Repository;
-import com.ProWheyBrasil.Model.ProdutoModel;
+package com.ProWheyBrasil.repository;
+import com.ProWheyBrasil.model.ProdutoModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

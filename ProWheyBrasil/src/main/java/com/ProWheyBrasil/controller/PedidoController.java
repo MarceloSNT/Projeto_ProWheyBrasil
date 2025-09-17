@@ -1,9 +1,9 @@
-package com.ProWheyBrasil.Controller;
+package com.ProWheyBrasil.controller;
 
 
-import com.ProWheyBrasil.Dto.PedidoDto;
-import com.ProWheyBrasil.Model.PedidoModel;
-import com.ProWheyBrasil.Repository.PedidoRepository;
+import com.ProWheyBrasil.dto.PedidoDto;
+import com.ProWheyBrasil.model.PedidoModel;
+import com.ProWheyBrasil.repository.PedidoRepository;
 import jakarta.validation.Valid;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
